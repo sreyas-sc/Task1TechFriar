@@ -5,21 +5,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <style>       
+    <style>  
+    
+    body{
+      background-color: #CADCFC;
+    }  
         
 
-h1.headlabel, a h1.headlabel {
+h1.headlabel {
+    padding-left: 20px;
     font-size: 30px;
     text-align: left;
     text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    color:#f9f9f9;
+    font-family: 'Brush Script MT', cursive;
 }
 
 
 
     header {
-      background-color: #09264d;
+      background-color: #00246B;
       display: flex;
       justify-content: space-between;
       align-items: center;}
@@ -30,23 +35,32 @@ h1.headlabel, a h1.headlabel {
       align-items: center;}
 
 
-    .header-button {
-        border-color: #2870ce;
-        background-color: #3184d7;
-        box-shadow: 0 2px 4px #8f9092;
+      .header-button {
+        /* border-color: #222222; */
+        color: #f9f9f9;
+        width: fit-content;
+        font-size: 1rem;
+        min-height: 35px;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
         margin-right: 20px;
-        border-radius: 10px;
+        border-radius: 20px 20px 20px 20px;
         cursor: pointer;
     }
+    .header-button:hover{
+      color: #fff;
+      background-color: #3cec65;
+      border-color: #0dfd55;
+          }
 
     .header-right {
       text-align: right;}
         
 
 footer {
-  background-color: #09264d;
+  background-color: #00246B;
   color: #fff;
-  /* position:absolute; */
+  position:absolute;
   bottom: 0;
   padding: 1em;
   text-align: center;
@@ -85,16 +99,16 @@ footer {
 
     <header>
         <div class="header-left">
-            <a href="HomePage.html"><h1 class="headlabel">TechFriar</h1></a>
+            <h1 class="headlabel">TechFriar</h1>
           </div>
-      <div class="header-right">
-        <a href="HomePage.html"><button class="header-button">Home</button></a>
-        <a href="AboutUs.html"><button class="header-button">About</button></a>
-        <a href="Services.html"><button class="header-button">Services</button></a>
-        <a href="Blog.html"><button class="header-button">Blog</button></a>
-        <a href="Contact.html"><button class="header-button">Contact</button></a>
-        
-      </div>
+          <nav id="nav-menu">
+            <a href="HomePage.html"><button class="header-button"><i class="fa-solid fa-house"></i> Home</button></a>
+            <a href="AboutUs.html"><button class="header-button"></i> About</button></a>
+            <a href="Services.html"><button class="header-button"></i> Services</button></a>
+            <a href="Blog.html"><button class="header-button"></i> Blog</button></a>
+            <a href="Projects.html"><button class="header-button">Projects</button></a>
+            <a href="Contact.html"><button class="header-button">Contact</button></a>
+          </nav>
     </header>
     <main>
         <h1>Blog</h1>
