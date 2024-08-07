@@ -4,272 +4,363 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style> 
-
+    <title>Contact</title>
+    <style>  
     body{
-      background-color: #CADCFC;
-    }   
-        
+      background-color: #FDF0F0;
+      margin-left: 0px;
+      min-height: max-content;
+      overflow-x: hidden;
+    }     
 
-h1.headlabel {
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-family: 'Brush Script MT', cursive;
-}
-
-
+    h1{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.05;
+    }
 
     header {
-      background-color: #00246B;
+      font-family: 'Poppins', sans-serif;
+      background: #132043;
       display: flex;
+      width: 100%;
       justify-content: space-between;
-      align-items: center;}
+      align-items: center;
+      overflow: hidden; 
+      box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
+      border-radius: 10px; 
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+      color: #494949;
+    }
+
+    h1.headlabel {
+      padding-left: 20px;
+      font-size: 30px;
+      text-align: left;
+      text-decoration: none;
+      color:#f9f9f9;
+      font-family: 'Brush Script MT', cursive;
+    }
 
     .header-left {
       display: flex;
       justify-content: space-between;
-      align-items: center;}
+      margin: 0;
+      align-items: center;
+    }
 
     .header-button {
-        /* border-color: #222222; */
-        color: #f9f9f9;
-        width: fit-content;
-        font-size: 1rem;
-        min-height: 35px;
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-        margin-right: 20px;
-        border-radius: 20px 20px 20px 20px;
-        cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      color: #f9f9f9;
+      width: fit-content;
+      font-size: 1rem;
+      min-height: 35px;
+      background-color: #3D4D55;
+      border-color: #1F4172;
+      margin-right: 20px;
+      min-width: 90px;
+      border-radius: 20px;
+      cursor: pointer;
     }
-    .header-button:hover{
+
+    .header-button:hover {
       color: #fff;
       background-color: #3cec65;
       border-color: #0dfd55;
+    }
+
+    footer {
+      background: #132043;
+      color: #fff;
+      position: relative;
+      padding: 1em;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header, footer {
+      width: 100vw; 
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      width: 40%;
+      text-align: left;
+    }
+
+    .footer-center {
+      width: 30%;
+      text-align: center;  
+    }
+
+    .footer-right {
+      width: 30%;
+      text-align: right;
+    }
+
+    .footer-right a {
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hamburger-menu {
+      display: none;
+      background-color: #00246b00;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .hamburger-menu i {
+      font-size: 24px;
+      color: #000000;
+    }
+
+    #nav-menu {
+      display: none;
+      justify-content: space-between;
+    }
+
+    .hamburger-menu.active + #nav-menu {
+      display: flex; 
+      opacity: 1;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    .enqfrm{
+      background: rgb(71,74,78);
+      background: linear-gradient(90deg, rgba(71,74,78,1) 1%, rgba(57,183,171,1) 38%, rgba(77,98,125,1) 67%);
+      border: 10px;
+      padding: 10px;
+      width: 50%;
+      max-width: 80%;
+      margin: auto;
+           border-radius: 10px 10px 10px 10px;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    input, textarea{
+      padding: 10px;
+      width: 60%;
+      border-radius: 10px;
+    }
+
+    textarea{
+      height: 40%;
+      max-width: 60%;
+    }
+
+    .submit-button{
+           background: rgb(21,164,90);
+           background: linear-gradient(90deg, rgba(21,164,90,1) 1%, rgba(59,207,190,1) 38%, rgba(80,119,172,1) 67%);
+      color: #FDF0F0;
+      border-radius: 20px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .hamburger-menu {
+            display: block;
+      }
+
+      .slider{
+        margin-bottom: 20%;
+        width: 90%;
+        font-size: 12px;
+      }
+
+      .header-button{
+        font-size: 0.7rem;
+        margin-top: 20px;
+      }
+
+      #nav-menu {
+        flex-direction: column;
+        position: fixed;
+          top: 90px;
+        right: 0;
+             background-color: #8e8e8ed0;
+        padding: 50px;
+        border: none;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0; 
+      }
+
+      #nav-menu a {
+        margin-bottom: 5px;
+      }
+
+      h1{
+        font-size: 20px;
+      }
+
+      button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .footer-right {
+        width: 20%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-right a {
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .footer-left {
+        width: 50%;
+        text-align: left;
+        font-size: 10px;
+      }
+
+      .footer-center p {
+        width: 50%;
+        font-size: 12px;
+        text-align: center;  
+      }
+
+          .footer-right {
+            width: 30%;
+            text-align: right;
           }
 
-    .header-right {
-      text-align: right;}
+            .enqfrm{
+              width: 100%;
+            }
 
-      #enquiry-form {
-            max-width: 500px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+            textarea, text{
+              width: 100%;
+            }
 
+      .submit-button{
+        font-size: 100%;
+      }
 
-        
+      p{
+             font-size: 12px;
+      }
+    }
 
-footer {
-  background-color: #00246B;
-  color: #fff;
-  position:absolute;
-  bottom: 0;
-  padding: 1em;
-  text-align: center;
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+    @media screen and (min-width: 769px) {
+      .hamburger-menu {
+        display: none;
+      }
 
-.footer-left {
-  width: 40%;
-  text-align: left;
-}
-
-.footer-center {
-  width: 30%;
-  text-align:center;  
-}
-
-.footer-right {
-  width: 30%;
-  text-align: right;
-}
-
-.footer-right a {
-  margin-left: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 25px;
-  
-}
-
-.hamburger-menu {
-  display: none;
-  background-color: #515353;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.hamburger-menu i {
-  font-size: 24px;
-  color: #000000;
-}
-
-#nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-@media screen and (max-width: 768px) {
-  .hamburger-menu {
-    display: block;
-  }
-
-  #nav-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #f9f9f9;
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  #nav-menu a {
-    margin-bottom: 10px;
-  }
-}
-
-
-@media screen and (min-width: 769px) {
-  .hamburger-menu {
-    display: none;
-  }
-
-  #nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
+      #nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
     </style>
 </head>
 <body>
 
-  <header>
-    <div class="header-left">
-     <h1 class="headlabel">TechFriar</h1>
-    </div>
-    <div class="header-right">
-      <button class="hamburger-menu" id="hamburger-menu">
-        <i class="fa fa-bars"></i>
-      </button>
-      <nav id="nav-menu">
-        <a href="HomePage.html"><button class="header-button"><i class="fa-solid fa-house"></i> Home</button></a>
-        <a href="AboutUs.html"><button class="header-button"></i> About</button></a>
-        <a href="Services.html"><button class="header-button"></i> Services</button></a>
-        <a href="Blog.html"><button class="header-button"></i> Blog</button></a>
-        <a href="Projects.html"><button class="header-button">Projects</button></a>
-        <a href="Contact.html"><button class="header-button">Contact</button></a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="header-left">
+            <h1 class="headlabel">Sreyas</h1>
+        </div>
+        <div class="header-right">
+            <button class="hamburger-menu" id="hamburger-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+              <a href="HomePage.html"><button class="header-button">Home</button></a>
+              <a href="AboutUs.html"><button class="header-button">About</button></a>
+              <a href="Services.html"><button class="header-button">Services</button></a>
+              <a href="Blog.html"><button class="header-button">Blog</button></a>
+              <a href="Projects.html"><button class="header-button">Projects</button></a>
+              <a href="Contact.html"><button class="header-button">Contact</button></a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <h1>Contact Us</h1>
-
-        <form id="enquiry-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="Send Enquiry">
-          </form>
+        <h1>Contact</h1>
+        <p><em>Feel free to contact for enquiries and suggestions</em></p>
+        <form class="enqfrm" id="enquiry-form">
+          <input type="text" id="name" name="name" placeholder="Name"><br><br>
+          <input type="email" id="email" name="email" placeholder="Email"><br><br>
+          <input type="tel" id="phone" name="phone" placeholder="Phone"><br><br>
+          <textarea id="message" name="message" placeholder="Message:"></textarea><br><br>
+          <input class="submit-button" type="submit" value="Send Enquiry">
+        </form>
     </main>
+
     <footer>
-        <div class="footer-left">             
-            <p><i class="fa fa-home"></i> World Trade Center, Kochi, India</p>
-            <p><i class="fa-solid fa-phone"></i> +91-8111904512</p>
-          </div>
+        <div class="footer-left">
+            <p>© 2024 Sreyas. All rights reserved.</p>
+        </div>
         <div class="footer-center">
-          <p>&copy;  Sreyas S</p>
+            <p>Follow us on:</p>
         </div>
         <div class="footer-right">
-          <a href="https://www.facebook.com/sree.sreyass" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sreyas.s_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/sreyas-s-27857a205/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://wa.me/918111904512?Hey!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="sreyas.sc@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 
     <script>
-        const form = document.getElementById('enquiry-form');
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-      
-          const name = document.getElementById('name').value;
-          const email = document.getElementById('email').value;
-          const phone = document.getElementById('phone').value;
-          const message = document.getElementById('message').value;
-          let isValid = true;
-      
-          if (name === '') {
-            alert('Please enter your name');
-            isValid = false;
-          }
-      
-          if (email === '' ||!validateEmail(email)) {
-            alert('Please enter a valid email address');
-            isValid = false;
-          }
-      
-          if (phone === '' ||!validatePhone(phone)) {
-            alert('Please enter a valid phone number');
-            isValid = false;
-          }
-      
-          if (message === '') {
-            alert('Please enter a message');
-            isValid = false;
-          }
-      
-          if (isValid) {
-            console.log('Form is valid, sending enquiry...');
-          }
-        });
-      
-        function validateEmail(email) {
-          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-          return emailRegex.test(email);
-        }
-      
-        function validatePhone(phone) {
-          const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-          return phoneRegex.test(phone);
+      document.getElementById('enquiry-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        if (!name || !email || !phone || !message) {
+          window.alert('Please fill out all fields.');
+          return;
         }
 
+        if (!validateEmail(email)) {
+          window.alert('Please enter a valid email address.');
+          return;
+        }
 
+        if (!validatePhone(phone)) {
+          window.alert('Please enter a valid phone number.');
+          return;
+        }
+        window.alert('Form submitted successfully!');
+      });
 
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const navMenu = document.getElementById('nav-menu');
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
 
-        hamburgerMenu.addEventListener('click', () => {
-          navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
-        });
-      </script>
+      function validatePhone(phone) {
+        const re = /^[0-9]{10}$/;
+        return re.test(phone);
+      }
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const navMenu = document.getElementById('nav-menu');
+
+      hamburgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    </script>
+
 </body>
 </html>
