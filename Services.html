@@ -5,129 +5,444 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <style>     
-    
+    <style>  
     body{
-      background-color: #CADCFC;
-    }  
-        
+      background-color: #FDF0F0;
+      margin-left: 0px;
+      min-height: max-content;
+      overflow-x: hidden;
+    }     
 
-h1.headlabel{
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-family: 'Brush Script MT', cursive;
-}
-
-
+    h1{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.05;
+    }
 
     header {
-      background-color: #00246B;
+      font-family: 'Poppins', sans-serif;
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+      background: #132043;
       display: flex;
+      width: 100%;
       justify-content: space-between;
-      align-items: center;}
+      align-items: center;
+      overflow: hidden; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
+  border-radius: 10px; 
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+      color: #494949;
+    }
+
+    h1.headlabel {
+      padding-left: 20px;
+      font-size: 30px;
+      text-align: left;
+      text-decoration: none;
+      color:#f9f9f9;
+      font-family: 'Brush Script MT', cursive;
+    }
 
     .header-left {
       display: flex;
       justify-content: space-between;
-      align-items: center;}
-
-
-      .header-button {
-        /* border-color: #222222; */
-        color: #f9f9f9;
-        width: fit-content;
-        font-size: 1rem;
-        min-height: 35px;
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-        margin-right: 20px;
-        border-radius: 20px 20px 20px 20px;
-        cursor: pointer;
+      margin: 0;
+      align-items: center;
     }
-    .header-button:hover{
+
+    .header-button {
+      font-family: 'Poppins', sans-serif;
+      color: #f9f9f9;
+      width: fit-content;
+      font-size: 1rem;
+      min-height: 35px;
+      /* background-color: #1F4172; */
+      background-color: #3D4D55;
+
+      border-color: #1F4172;
+      margin-right: 20px;
+      min-width: 90px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .header-button:hover {
       color: #fff;
       background-color: #3cec65;
       border-color: #0dfd55;
-          }
+    }
 
-    .header-right {
-      text-align: right;}
-        
+    footer {
+      background: #132043;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      /* margin-bottom: -12px; */
+      padding: 1em;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
 
-footer {
-  background-color: #00246B;
-  color: #fff;
-  position:absolute;
-  bottom: 0;
-  padding: 1em;
-  text-align: center;
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+    
+
+    header, footer {
+      width: 100vw; 
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      width: 40%;
+      text-align: left;
+    }
+
+    .footer-center {
+      width: 30%;
+      text-align: center;  
+    }
+
+    .footer-right {
+      width: 30%;
+      text-align: right;
+    }
+
+    .footer-right a {
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hamburger-menu {
+      display: none;
+      background-color: #00246b00;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .hamburger-menu i {
+      font-size: 24px;
+      color: #000000;
+    }
+
+    #nav-menu {
+      display: none;
+      justify-content: space-between;
+    }
+
+    .hamburger-menu.active + #nav-menu {
+      display: flex; 
+      opacity: 1;
+    }
+
+    p{
+      text-align: center;
+
+    }
+
+    
+    .slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.footer-left {
-  width: 40%;
-  text-align: left;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.footer-center {
-  width: 30%;
-  text-align:center;  
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-.footer-right {
-  width: 30%;
-  text-align: right;
+
+.prev {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.footer-right a {
-  margin-left: 10px;
-  color: #fff;
-  text-decoration: none;
+.next {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
+    
 
+
+    
+    @media screen and (max-width: 768px) {
+      .hamburger-menu {
+        display: block;
+      }
+
+      .slider{
+        width: 90%;
+        font-size: 12px;
+      }
+
+
+      .header-button{
+        font-size: 0.7rem;
+        margin-top: 20px;
+      }
+
+      #nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        background-color: #8e8e8ed0;
+        padding: 50px;
+        border: none;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0; 
+      }
+
+      #nav-menu a {
+        margin-bottom: 5px;
+      }
+
+      h1{
+        font-size: 20px;
+      }
+
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+      
+
+      .footer-right {
+        width: 20%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-right a {
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .footer-left {
+        width: 50%;
+        text-align: left;
+        font-size: 10px;
+      }
+
+      .footer-center p {
+        width: 50%;
+        font-size: 12px;
+        text-align: center;  
+      }
+
+      .footer-right {
+        width: 30%;
+        text-align: right;
+      }
+  
+ 
+    }
+
+    @media screen and (min-width: 769px) {
+      .hamburger-menu {
+        display: none;
+      }
+
+      #nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
     </style>
 </head>
 <body>
 
     <header>
         <div class="header-left">
-            <h1 class="headlabel">TechFriar</h1>
-          </div>
-          <nav id="nav-menu">
-            <a href="HomePage.html"><button class="header-button"><i class="fa-solid fa-house"></i> Home</button></a>
-            <a href="AboutUs.html"><button class="header-button"></i> About</button></a>
-            <a href="Services.html"><button class="header-button"></i> Services</button></a>
-            <a href="Blog.html"><button class="header-button"></i> Blog</button></a>
-            <a href="Projects.html"><button class="header-button">Projects</button></a>
-            <a href="Contact.html"><button class="header-button">Contact</button></a>
-          </nav>
+            <h1 class="headlabel">Sreyas</h1>
+        </div>
+        <div class="header-right">
+            <button class="hamburger-menu" id="hamburger-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+              <a href="HomePage.html"><button class="header-button">Home</button></a>
+              <a href="AboutUs.html"><button class="header-button">About</button></a>
+              <a href="Services.html"><button class="header-button">Services</button></a>
+              <a href="Blog.html"><button class="header-button">Blog</button></a>
+              <a href="Projects.html"><button class="header-button">Projects</button></a>
+              <a href="Contact.html"><button class="header-button">Contact</button></a>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Services Offered</h1>
-    </main>
-    <footer>
-        <div class="footer-left">             
-            <p><i class="fa fa-home"></i> World Trade Center, Kochi, India</p>
-            <p><i class="fa-solid fa-phone"></i> +91-8111904512</p>
+        <h1>Services</h1>
+        <p><em>I provide a range of tailored solutions designed to meet your unique needs.<br> Our expertise spans various industries, ensuring we deliver exceptional results that drive success and create value. <br>Here’s a glimpse into what we offer:</em></p>
+
+        <div class="slider">
+          <div class="slides">
+              <div class="slide">
+                  <h2>1. Web Development</h2>
+                  <h3>Transformative Web Solutions</h3>
+                  <p>From dynamic websites to interactive web applications, we specialize in creating custom web solutions that enhance user experience and engagement. Our services include:</p>
+                  <ul>
+                      <li>Custom Website Design and Development: Tailored designs to meet your brand’s unique identity.</li>
+                      <li>E-commerce Solutions: Building robust online stores that drive sales and growth.</li>
+                      <li>Content Management Systems (CMS): Easy-to-manage platforms for seamless content updates.</li>
+                      <li>Web Maintenance and Support: Ongoing support to keep your website running smoothly.</li>
+                  </ul>
+              </div>
+              <div class="slide">
+                  <h2>2. Mobile App Development</h2>
+                  <h3>Innovative Mobile Experiences</h3>
+                  <p>Our mobile app development services focus on delivering high-performance apps for both iOS and Android platforms. We offer:</p>
+                  <ul>
+                      <li>Native and Cross-Platform Apps: Custom apps optimized for different devices and operating systems.</li>
+                      <li>App Design and Prototyping: Creating intuitive and engaging user interfaces.</li>
+                      <li>App Integration and Support: Integrating with existing systems and providing post-launch support.</li>
+                      <li>App Analytics and Optimization: Tracking performance and making improvements based on data insights.</li>
+                  </ul>
+              </div>
+              <div class="slide">
+                  <h2>3. Digital Marketing</h2>
+                  <h3>Effective Strategies for Online Growth</h3>
+                  <p>Enhance your online presence with our comprehensive digital marketing services, including:</p>
+                  <ul>
+                      <li>Search Engine Optimization (SEO): Improving your website’s visibility and ranking on search engines.</li>
+                      <li>Pay-Per-Click (PPC) Advertising: Targeted ads to drive traffic and conversions.</li>
+                      <li>Social Media Marketing: Engaging campaigns across various social media platforms.</li>
+                      <li>Content Creation and Strategy: Crafting compelling content that resonates with your audience.</li>
+                  </ul>
+              </div>
+              <div class="slide">
+                  <h2>4. IT Consulting</h2>
+                  <h3>Expert Guidance and Solutions</h3>
+                  <p>Our IT consulting services provide strategic advice and support to optimize your technology infrastructure. We offer:</p>
+                  <ul>
+                      <li>Technology Assessment and Strategy: Evaluating your current tech setup and planning for future needs.</li>
+                      <li>System Integration: Connecting disparate systems for improved efficiency and performance.</li>
+                      <li>Cybersecurity Solutions: Protecting your business from digital threats and vulnerabilities.</li>
+                      <li>Cloud Services: Implementing cloud solutions for scalability and flexibility.</li>
+                  </ul>
+              </div>
+              <div class="slide">
+                  <h2>5. Design and Branding</h2>
+                  <h3>Crafting Unique Brand Identities</h3>
+                  <p>Create a memorable brand with our design and branding services:</p>
+                  <ul>
+                      <li>Brand Identity Design: Developing logos, color schemes, and visual elements that represent your brand.</li>
+                      <li>Graphic Design: Creating marketing materials, brochures, and digital assets.</li>
+                      <li>User Experience (UX) Design: Designing user-friendly interfaces and experiences for your digital products.</li>
+                  </ul>
+              </div>
+              <div class="slide">
+                  <h2>6. Consulting and Training</h2>
+                  <h3>Empowering Your Team</h3>
+                  <p>We offer consulting and training services to help your team succeed:</p>
+                  <ul>
+                      <li>Business Consulting: Providing strategic advice to drive business growth and efficiency.</li>
+                      <li>Technical Training: Educating your team on the latest technologies and best practices.</li>
+                      <li>Workshops and Seminars: Hosting sessions to enhance skills and knowledge in various areas.</li>
+                  </ul>
+              </div>
           </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>© 2024 Sreyas. All rights reserved.</p>
+        </div>
         <div class="footer-center">
-          <p>&copy;  Sreyas S</p>
+            <p>Follow me on social media:</p>
         </div>
         <div class="footer-right">
-          <a href="https://www.facebook.com/sree.sreyass" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sreyas.s_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/sreyas-s-27857a205/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://wa.me/918111904512?Hey!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="sreyas.sc@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://twitter.com/sreyas"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/sreyas"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sreyas"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('scroll', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+      hamburgerMenu.classList.remove('active');
+    }
+  });
+
+
+
+  let currentSlide = 0;
+
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+
+        
+    </script>
 </body>
 </html>
