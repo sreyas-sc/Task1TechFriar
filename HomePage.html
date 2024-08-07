@@ -7,24 +7,27 @@
     <title>Home</title>
     <style>  
     body{
-      /* background-color: #CADCFC; */
+      background-color: #FDF0F0;
       /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
-      background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
 
       /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
       margin-left: 0px;
       min-height: max-content;
+      overflow-x: hidden;
     }     
 
     h1{
       text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.05;
     }
 
     header {
       font-family: 'Poppins', sans-serif;
-      background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-      /* background: rgb(2,0,36);
-      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+      background: #132043;
       display: flex;
       width: 100%;
       justify-content: space-between;
@@ -65,8 +68,10 @@
       width: fit-content;
       font-size: 1rem;
       min-height: 35px;
-      background-color: #0d6efd;
-      border-color: #0d6efd;
+      /* background-color: #1F4172; */
+      background-color: #3D4D55;
+
+      border-color: #1F4172;
       margin-right: 20px;
       min-width: 90px;
       border-radius: 20px;
@@ -80,9 +85,8 @@
     }
 
     footer {
-      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-      /* background: rgb(0,212,255);
-      background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,0.9221813725490196) 51%, rgba(9,9,121,0.9137780112044818) 100%); */
+      /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
+      background: #132043;
       color: #fff;
       position: relative;
       bottom: 0;
@@ -93,15 +97,6 @@
       display: flex;
       justify-content: space-between;
     }
-
-    /* .circle1{
-      position: absolute;
-      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
-      width: 800px;
-      height: 800px;
-      margin-left: -100px;
-      border-radius: 50%;
-    } */
 
     hr{
       box-shadow: 0 0 15px rgba(105, 150, 162, 0.9); 
@@ -133,18 +128,40 @@
       color: #fff;
       text-decoration: none;
     }
-
-    li {
+    .projects{
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .projectnhead{
       font-weight: bolder;
-      padding-top: 20px;
+      color: #1e1e46;
+    }
+    .projectn {
+      background-color: #D3C3B9;
+      padding: 10px 10px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      width: 30%;
+      box-shadow:  0 12px 15px rgba(57, 57, 57, 0.725);
+    }
+    .projectn img{
+      width: 50%;
+      height: 30%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
     }
 
     .HighlightedProjects {
-      margin-left: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
       align-items: center;
       padding-top: 20px;
       font-family: 'Poppins', sans-serif;
       color: #494949;
+      text-align: center;
     }
 
     .discoverWorks, .discoverworkspara, .whatidoh, .whatidoparag {
@@ -181,6 +198,7 @@
       .hamburger-menu {
         display: block;
       }
+
 
       .header-button{
         font-size: 0.7rem;
@@ -234,6 +252,24 @@
         width: 30%;
         text-align: right;
       }
+
+      .projectn {
+      width: 80%; 
+      margin: 0 auto;
+      margin-bottom: 10px;
+      min-height: max-content;
+      align-items: center;
+  }
+  .projectn img{  
+    width: 70%;
+    height: 30%;
+  }
+  
+  .projectnhead, .discoverworkspara, .discoverWorks, h1, .projectndesc{
+    font-size: 100%;
+    text-align: center;
+  }
+ 
     }
 
     @media screen and (min-width: 769px) {
@@ -282,20 +318,35 @@
         </div>
         <div class="HighlightedProjects">
             <h4>Highlighted Projects:</h4>
-            <ul>
-                <li>Project Name 1</li>
-                <span>A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</span>
-                <br>
-                <a href="www.sreyas.site"><span>View the project  <i class="fa-solid fa-link"></i></span></a>
-                <li>Project Name 2</li>
-                <span>A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</span>
-                <br>
-                <a href="www.sreyas.site"><span>View the project  <i class="fa-solid fa-link"></i></span></a>
-                <li>Project Name 3</li>
-                <span>A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</span>
-                <br>
-                <a href="www.sreyas.site"><span>View the project  <i class="fa-solid fa-link"></i></span></a>
-            </ul>
+          <div class="projects">
+            <div class="projectn">
+              <p class="projectnhead">Project Name 1</p>
+              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
+              <br>
+              <img src="https://github.com/sreyas-sc/PharMap/raw/master/assets/images/one.jpg" alt="Loading failed">
+              <br>
+              <a href="https://www.sreyas.site"><i class="fa-solid fa-link"></i></a>
+            </div>
+
+            <div class="projectn">
+              <p class="projectnhead">Project Name 1</p>
+              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
+              <br>
+              <img src="https://github.com/sreyas-sc/JSChatApp/raw/master/chat-app-frontend/src/assets/homechat.jpg" alt="Loading failed">
+              <br>
+                <a href="https://www.sreyas.site"><i class="fa-solid fa-link"></i></a>
+            </div>
+
+            <div class="projectn">
+              <p class="projectnhead">Project Name 1</p>
+              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
+              <br>
+              <img src="https://github.com/sreyas-sc/Portfolio/blob/main/src/assets/tempimg.png?raw=true" alt="Loading Failed">
+              <br>
+
+              <a href="https://www.sreyas.site"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
         </div>
     </main>
 
