@@ -3,131 +3,454 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <style>       
-        
-        body{
-      background-color: #CADCFC;
-    }  
+    <style>  
+    body{
+      background-color: #FDF0F0;
+      margin-left: 0px;
+      min-height: max-content;
+      overflow-x: hidden;
+    }     
 
-h1.headlabel {
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-family: 'Brush Script MT', cursive;
-}
-
-
+    h1{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.05;
+    }
 
     header {
-      background-color: #00246B;
+      font-family: 'Poppins', sans-serif;
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+      background: #132043;
       display: flex;
+      width: 100%;
       justify-content: space-between;
-      align-items: center;}
+      align-items: center;
+      overflow: hidden; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
+  border-radius: 10px; 
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+      color: #494949;
+    }
+
+    h1.headlabel {
+      padding-left: 20px;
+      font-size: 30px;
+      text-align: left;
+      text-decoration: none;
+      color:#f9f9f9;
+      font-family: 'Brush Script MT', cursive;
+    }
 
     .header-left {
       display: flex;
       justify-content: space-between;
-      align-items: center;}
-
-
-      .header-button {
-        /* border-color: #222222; */
-        color: #f9f9f9;
-        width: fit-content;
-        font-size: 1rem;
-        min-height: 35px;
-        background-color: #0d6efd;
-        border-color: #0d6efd;
-        margin-right: 20px;
-        border-radius: 20px 20px 20px 20px;
-        cursor: pointer;
+      margin: 0;
+      align-items: center;
     }
-    .header-button:hover{
+
+    .header-button {
+      font-family: 'Poppins', sans-serif;
+      color: #f9f9f9;
+      width: fit-content;
+      font-size: 1rem;
+      min-height: 35px;
+      /* background-color: #1F4172; */
+      background-color: #3D4D55;
+
+      border-color: #1F4172;
+      margin-right: 20px;
+      min-width: 90px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .header-button:hover {
       color: #fff;
       background-color: #3cec65;
       border-color: #0dfd55;
-          }
+    }
 
-    .header-right {
-      text-align: right;}
-        
+    footer {
+      background: #132043;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      padding: 1em;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
 
-footer {
-  background-color: #00246B;
-  color: #fff;
-  position:absolute;
-  bottom: 0;
-  padding: 1em;
-  text-align: center;
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+    hr{
+      box-shadow: 0 0 15px rgba(105, 150, 162, 0.9); 
+      width: 80%;
+    }
 
-.footer-left {
-  width: 40%;
-  text-align: left;
-}
+    header, footer {
+      width: 100vw; 
+      margin: 0 auto;
+    }
 
-.footer-center {
-  width: 30%;
-  text-align:center;  
-}
+    .footer-left {
+      width: 40%;
+      text-align: left;
+    }
 
-.footer-right {
-  width: 30%;
-  text-align: right;
-}
+    .footer-center {
+      width: 30%;
+      text-align: center;  
+    }
 
-.footer-right a {
-  margin-left: 10px;
-  color: #fff;
-  text-decoration: none;
-}
+    .footer-right {
+      width: 30%;
+      text-align: right;
+    }
 
+    .footer-right a {
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hamburger-menu {
+      display: none;
+      background-color: #00246b00;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .hamburger-menu i {
+      font-size: 24px;
+      color: #000000;
+    }
+
+    #nav-menu {
+      display: none;
+      justify-content: space-between;
+    }
+
+    .hamburger-menu.active + #nav-menu {
+      display: flex; 
+      opacity: 1;
+    }
+
+    .welcome{
+      width: 75%;
+      margin: 0 auto;
+      background-color: #e0dfdf ;
+      padding: 20px;
+      border-radius: 10px ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);;
+    }
+    .welcome p{
+      text-align: center;
+      padding: 10px;
+      font-style: italic;
+
+    }
+
+    .background{
+      
+      width: 75%;
+      margin: auto;
+      background-color: #e0dfdf ;
+      padding: 20px;
+      border-radius: 10px ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+    }
+    .background h2{
+      text-align: left;
+      color: #1F4172;
+    }
+    .background p{
+      text-align: center;
+      padding: 10px;
+      font-style: italic;
+    }
+    .skills h2,p{
+      text-align: center;
+      color: #1F4172;
+    }
+    li{
+      padding: 20px;
+      font-size: 0.9em;
+      list-style-type: none;
+    }
+  
+    .lst{
+      margin: auto;
+      border-radius: 10px;
+      width: fit-content;
+      background-color: #e0dfdf ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+     
+    }
+
+    .letsconnect h2, p{
+      text-align: center;
+      color: #1F4172;
+    }
+
+    .iconsforsocial{
+      font-size: 2em;
+      color:#1F4172;
+      text-align: center;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      .hamburger-menu {
+        display: block;
+      }
+
+
+      .header-button{
+        font-size: 0.7rem;
+        margin-top: 20px;
+      }
+
+      #nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        background-color: #8e8e8ed0;
+        padding: 50px;
+        border: none;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0; 
+      }
+
+      #nav-menu a {
+        margin-bottom: 5px;
+      }
+
+      h1{
+        font-size: 20px;
+      }
+      .welcome{
+        width: 70%;
+        height: 100%;
+      }
+      .welcome p{
+        font-size: 13px;
+      }
+
+      .background{
+        width: 70%;
+        height: 100%;
+      }
+      .background h2{
+        font-size: 15px;
+      }
+      .background p{
+        font-size: 13px;
+      }
+
+      .skills h2{
+        font-size: 15px;
+      }
+      .skills p{
+        font-size: 13px;
+      }
+
+      li{
+        list-style-type: none;
+        font-size: 13px;
+      }
+
+      .footer-right {
+        width: 20%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-right a {
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .footer-left {
+        width: 50%;
+        text-align: left;
+        font-size: 10px;
+      }
+
+      .footer-center p {
+        width: 50%;
+        font-size: 12px;
+        text-align: center;  
+      }
+
+      .footer-right {
+        width: 30%;
+        text-align: right;
+      }
+  
+ 
+    }
+
+    @media screen and (min-width: 769px) {
+      .hamburger-menu {
+        display: none;
+      }
+
+      #nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
     </style>
 </head>
 <body>
 
     <header>
         <div class="header-left">
-            <h1 class="headlabel">TechFriar</h1>
-          </div>
-          <nav id="nav-menu">
-            <a href="HomePage.html"><button class="header-button"><i class="fa-solid fa-house"></i> Home</button></a>
-            <a href="AboutUs.html"><button class="header-button"></i> About</button></a>
-            <a href="Services.html"><button class="header-button"></i> Services</button></a>
-            <a href="Blog.html"><button class="header-button"></i> Blog</button></a>
-            <a href="Projects.html"><button class="header-button">Projects</button></a>
-            <a href="Contact.html"><button class="header-button">Contact</button></a>
-          </nav>
+            <h1 class="headlabel">Sreyas</h1>
+        </div>
+        <div class="header-right">
+            <button class="hamburger-menu" id="hamburger-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+              <a href="HomePage.html"><button class="header-button">Home</button></a>
+              <a href="AboutUs.html"><button class="header-button">About</button></a>
+              <a href="Services.html"><button class="header-button">Services</button></a>
+              <a href="Blog.html"><button class="header-button">Blog</button></a>
+              <a href="Projects.html"><button class="header-button">Projects</button></a>
+              <a href="Contact.html"><button class="header-button">Contact</button></a>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>About Us</h1>
-    </main>
-    <footer>
-        <div class="footer-left">             
-            <p><i class="fa fa-home"></i> World Trade Center, Kochi, India</p>
-            <p><i class="fa-solid fa-phone"></i> +91-8111904512</p>
+        <h1>About Me</h1>
+
+        <div class="welcome">
+          <p>Hello! I’m Sreyas, a dedicated software developer with a passion for crafting
+             innovative solutions and delivering impactful results. My journey in technology
+              has been driven by curiosity and a commitment to excellence, and I’m excited to
+               share a bit about my story with you.</p>
+        </div>
+<br>
+        <div class="background">
+          <h2>Background</h2>
+          <p>
+            I hold a Master’s degree in Computer Applications from College of Engineering Trivandrum, 
+            where I deepened my understanding of computer science and software development. My career
+             began at ClaySys Technologies, where I worked as a Software Analyst, gaining valuable 
+             experience in analyzing complex problems, developing solutions, and managing projects.
+              This foundation has equipped me with a diverse skill set and a strong problem-solving mindset.
+          </p>
+        </div>
+        <br>
+
+        <div class="background">
+          <h2>My Values</h2>
+          <p>
+            I believe in leveraging technology to create meaningful solutions that drive positive change. 
+            My work is guided by principles of innovation, integrity, and collaboration. I strive to deliver 
+            high-quality results while maintaining transparency and open communication with my clients.
+          </p>
+        </div>
+        <br>
+
+        <div class="background">
+          <h2>Personal Interests
+          </h2>
+          <p>
+            Beyond the screen, I’m passionate about exploring new technologies, contributing to open-source
+             projects, and staying up-to-date with industry trends. I also enjoy reading and hiking, which 
+             help me stay creative and inspired. These interests not only fuel my professional growth but 
+             also keep me engaged and motivated.
+          </p>
+        </div>
+        <br>
+
+        <div class="letsconnect">
+        <h2>Let’s Connect</h2>
+        <p>I’m always eager to discuss new projects or simply connect with like-minded individuals.
+           Feel free to reach out through the Contact page.
+           Let’s create something amazing together!</p>
+        <div>
+
+          <div class="iconsforsocial">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
           </div>
+
+        <div class="skills">
+          <h2>Skills and Expertise</h2>
+          <p>Over the years, I’ve developed a robust skill set that includes:</p>
+            <ul>
+              <li>
+               <div class="lst"><strong>Programming Languages:</strong> <em>Python, JavaScript, SQL</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Web Technologies:</strong> <em>React.js, Node.js, TailwindCSS</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Database Management:</strong> <em> PostgreSQL, Supabase</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Real-Time Communication:</strong> <em>WebSocket, WebRTC</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Project Management:</strong> <em>Agile methodologies, Requirement Analysis</em></div>
+              </li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>© 2024 Sreyas. All rights reserved.</p>
+        </div>
         <div class="footer-center">
-          <p>&copy;  Sreyas S</p>
+            <p>Follow me on social media:</p>
         </div>
         <div class="footer-right">
-          <a href="https://www.facebook.com/sree.sreyass" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sreyas.s_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/sreyas-s-27857a205/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://wa.me/918111904512?Hey!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="sreyas.sc@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://twitter.com/sreyas"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/sreyas"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sreyas"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('scroll', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+      hamburgerMenu.classList.remove('active');
+    }
+  });
+
+        
+    </script>
 </body>
 </html>
