@@ -90,11 +90,19 @@
         return re.test(phone);
       }
       const hamburgerMenu = document.getElementById('hamburger-menu');
-      const navMenu = document.getElementById('nav-menu');
+        const navMenu = document.getElementById('nav-menu');
 
-      hamburgerMenu.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('scroll', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+      hamburgerMenu.classList.remove('active');
+    }
+  });
     </script>
 
 </body>
