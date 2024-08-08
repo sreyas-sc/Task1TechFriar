@@ -7,7 +7,7 @@ body{
 
     h1{
       text-align: center;
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: bold;
       line-height: 1.05;
     }
@@ -203,23 +203,32 @@ body{
       }
 
       .slider{
+        order: 1;
+        z-index: 2;
         margin-bottom: 20%;
         width: 90%;
         font-size: 12px;
+        position: relative;
       }
 
 
       .header-button{
+       
         font-size: 0.7rem;
         margin-top: 20px;
+        
       }
 
       #nav-menu {
+        /* order: 2; */
+        /* z-index: 1; */
+        position: fixed;
+        z-index: 3; 
         flex-direction: column;
         position: fixed;
         top: 90px;
         right: 0;
-        background-color: #8e8e8ed0;
+        background-color: #8e8e8ea0;
         padding: 50px;
         border: none;
         overflow: hidden;
