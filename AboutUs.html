@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About</title>
     <style>  
     body{
       background-color: #FDF0F0;
@@ -35,10 +35,7 @@
 
     h1{
       font-family: 'Poppins', sans-serif;
-      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725); 
-      ;
-
-      /* font-family: 'Brush Script MT', cursive; */
+      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
       color: #494949;
     }
 
@@ -74,7 +71,7 @@
       min-width: 90px;
       border-radius: 20px;
       cursor: pointer;
-      padding: 10px 20px;
+      padding: 10px 20px; 
       margin: 10px; 
     }
 
@@ -85,7 +82,6 @@
     }
 
     footer {
-      /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
       background: #132043;
       color: #fff;
       position: relative;
@@ -128,53 +124,6 @@
       color: #fff;
       text-decoration: none;
     }
-    .projects{
-    display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .projectnhead{
-      font-weight: bolder;
-      color: #1e1e46;
-    }
-    .projectn {
-      background-color: #D3C3B9;
-      /* min-height: fit-content; */
-      padding: 10px 10px;
-      border-radius: 15px;
-      margin-bottom: 10px;
-      width: 30%;
-      box-shadow:  0 12px 15px rgba(57, 57, 57, 0.725);
-    }
-
-    .projectn a{
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .projectn img{
-      width: 50%;
-      height: 30%;
-      align-items: center;
-      justify-content: center;
-      /* border-radius: 10%; */
-      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-    }
-
-    .HighlightedProjects {
-      margin-left: 10px;
-      margin-right: 10px;
-      align-items: center;
-      padding-top: 20px;
-      font-family: 'Poppins', sans-serif;
-      color: #494949;
-      text-align: center;
-    }
-
-    .discoverWorks, .discoverworkspara, .whatidoh, .whatidoparag {
-      font-family: 'Poppins', sans-serif;
-      color: #494949;
-      text-align: center;
-    }
 
     .hamburger-menu {
       display: none;
@@ -197,6 +146,68 @@
     .hamburger-menu.active + #nav-menu {
       display: flex; 
       opacity: 1;
+    }
+
+    .welcome{
+      width: 75%;
+      margin: 0 auto;
+      background-color: #e0dfdf ;
+      padding: 20px;
+      border-radius: 10px ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);;
+    }
+    .welcome p{
+      text-align: center;
+      padding: 10px;
+      font-style: italic;
+
+    }
+
+    .background{
+      
+      width: 75%;
+      margin: auto;
+      background-color: #e0dfdf ;
+      padding: 20px;
+      border-radius: 10px ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+    }
+    .background h2{
+      text-align: left;
+      color: #1F4172;
+    }
+    .background p{
+      text-align: center;
+      padding: 10px;
+      font-style: italic;
+    }
+    .skills h2,p{
+      text-align: center;
+      color: #1F4172;
+    }
+    li{
+      padding: 20px;
+      font-size: 0.9em;
+      list-style-type: none;
+    }
+    .lst{
+      margin: auto;
+      border-radius: 10px;
+      width: fit-content;
+      background-color: #e0dfdf ;
+      box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+     
+      }
+
+    .letsconnect h2, p{
+      text-align: center;
+      color: #1F4172;
+    }
+
+    .iconsforsocial{
+      font-size: 2em;
+      color:#1F4172;
+      text-align: center;
     }
 
     
@@ -226,6 +237,40 @@
 
       #nav-menu a {
         margin-bottom: 5px;
+      }
+
+      h1{
+        font-size: 20px;
+      }
+      .welcome{
+        width: 70%;
+        height: 100%;
+      }
+      .welcome p{
+        font-size: 13px;
+      }
+
+      .background{
+        width: 70%;
+        height: 100%;
+      }
+      .background h2{
+        font-size: 15px;
+      }
+      .background p{
+        font-size: 13px;
+      }
+
+      .skills h2{
+        font-size: 15px;
+      }
+      .skills p{
+        font-size: 13px;
+      }
+
+      li{
+        list-style-type: none;
+        font-size: 13px;
       }
 
       .footer-right {
@@ -258,34 +303,7 @@
         width: 30%;
         text-align: right;
       }
-
-      .projectn {
-        min-height: max-content;
-      width: 80%; 
-      margin: 0 auto;
-      margin-bottom: 10px;
-      min-height: max-content;
-      align-items: center;
-  }
-  .projectn img{ 
-   
-    width: 40%;
-    height: 30%;
-  }
-
-  .projectndesc{
-    font-size: 12px;
-  }
   
-  .projectnhead, .discoverworkspara, .discoverWorks, h1{
-    font-size: 100%;
-    text-align: center;
-  }
-
-  .projectn a{
-      text-decoration: none;
-      font-size: 10px;
-    }
  
     }
 
@@ -323,48 +341,86 @@
         </div>
     </header>
     <main>
-        <h1>Welcome to Sreyas's Portfolio</h1>
-        <hr>
-        <div>
-            <h2 class="discoverWorks">Discover My Work</h2>
-            <p class="discoverworkspara">Welcome to my portfolio! Here, you’ll find a collection of my most exciting and impactful projects. Each project reflects my commitment to quality, innovation, and excellence.</p>
+        <h1>About Me</h1>
+
+        <div class="welcome">
+          <p>Hello! I’m Sreyas, a dedicated software developer with a passion for crafting
+             innovative solutions and delivering impactful results. My journey in technology
+              has been driven by curiosity and a commitment to excellence, and I’m excited to
+               share a bit about my story with you.</p>
         </div>
-        <hr>
-        <div>
-          <div class="circle1"></div>
+<br>
+        <div class="background">
+          <h2>Background</h2>
+          <p>
+            I hold a Master’s degree in Computer Applications from College of Engineering Trivandrum, 
+            where I deepened my understanding of computer science and software development. My career
+             began at ClaySys Technologies, where I worked as a Software Analyst, gaining valuable 
+             experience in analyzing complex problems, developing solutions, and managing projects.
+              This foundation has equipped me with a diverse skill set and a strong problem-solving mindset.
+          </p>
         </div>
-        <div class="HighlightedProjects">
-            <h4>Highlighted Projects:</h4>
-          <div class="projects">
-            <div class="projectn">
-              <p class="projectnhead">PharMap</p>
-              <p class="projectndesc">A nearby pharmacy finder and medicine management flutter app with medicine reminder</p>
-              <!-- <br>
-              <img src="https://github.com/sreyas-sc/PharMap/raw/master/assets/images/one.jpg" alt="Loading failed"> -->
-              <br>
-              <a href="https://github.com/sreyas-sc/PharMap">View project <i class="fa-brands fa-github"></i></a>
-            </div>
+        <br>
 
-            <div class="projectn">
-              <p class="projectnhead">JSChatApp</p>
-              <p class="projectndesc">This JavaScript chat application was developed as part of an interview assessment. It provides real-time chat functionality using modern web technologies and is designed to demonstrate proficiency in JavaScript, Node.js, and WebSocket technologies.</p>
-              <br>
-              <!-- <img src="https://github.com/sreyas-sc/JSChatApp/raw/master/chat-app-frontend/src/assets/homechat.jpg" alt="Loading failed">
-              <br> -->
-              <a href="https://github.com/sreyas-sc/JSChatApp">View project <i class="fa-brands fa-github"></i></a>
-            </div>
+        <div class="background">
+          <h2>My Values</h2>
+          <p>
+            I believe in leveraging technology to create meaningful solutions that drive positive change. 
+            My work is guided by principles of innovation, integrity, and collaboration. I strive to deliver 
+            high-quality results while maintaining transparency and open communication with my clients.
+          </p>
+        </div>
+        <br>
 
-            <div class="projectn">
-              <p class="projectnhead">Protfolio</p>
-              <p class="projectndesc">A peronalized portfolio built using React</p>
-              <!-- <br>
-              <img src="https://github.com/sreyas-sc/Portfolio/blob/main/src/assets/tempimg.png?raw=true" alt="Loading Failed"> -->
-              <br>
+        <div class="background">
+          <h2>Personal Interests
+          </h2>
+          <p>
+            Beyond the screen, I’m passionate about exploring new technologies, contributing to open-source
+             projects, and staying up-to-date with industry trends. I also enjoy reading and hiking, which 
+             help me stay creative and inspired. These interests not only fuel my professional growth but 
+             also keep me engaged and motivated.
+          </p>
+        </div>
+        <br>
 
-              <a href="https://github.com/sreyas-sc/Portfolio">View project <i class="fa-brands fa-github"></i></a>
-            </div>
+        <div class="letsconnect">
+        <h2>Let’s Connect</h2>
+        <p>I’m always eager to discuss new projects or simply connect with like-minded individuals.
+           Feel free to reach out through the Contact page.
+           Let’s create something amazing together!</p>
+        <div>
+
+          <div class="iconsforsocial">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
           </div>
+
+        <div class="skills">
+          <h2>Skills and Expertise</h2>
+          <p>Over the years, I’ve developed a robust skill set that includes:</p>
+            <ul>
+              <li>
+               <div class="lst"><strong>Programming Languages:</strong> <em>Python, JavaScript, SQL</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Web Technologies:</strong> <em>React.js, Node.js, TailwindCSS</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Database Management:</strong> <em> PostgreSQL, Supabase</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Real-Time Communication:</strong> <em>WebSocket, WebRTC</em></div>
+              </li>
+              <li>
+              <div class="lst"><strong>Project Management:</strong> <em>Agile methodologies, Requirement Analysis</em></div>
+              </li>
+            </ul>
         </div>
+        
     </main>
 
     <footer>
@@ -375,10 +431,10 @@
             <p>Follow me on social media:</p>
         </div>
         <div class="footer-right">
-            <a href="https://twitter.com/sreyas" aria-label="Follow Sreyas on Twitter"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://github.com/sreyas"aria-label="Follow Sreyas on Github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sreyas" aria-label="Connect Sreyas on linkedin"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+          <a href="https://twitter.com/sreyas" aria-label="Follow Sreyas on Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/sreyas"aria-label="Follow Sreyas on Github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sreyas" aria-label="Connect Sreyas on linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
     </footer>
 
     <script>
