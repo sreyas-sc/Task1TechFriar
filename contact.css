@@ -87,6 +87,12 @@ body{
     margin: 0 auto;
   }
 
+  footer{
+    margin-bottom: 0;
+    position: relative;
+    align-items: end;
+  }
+
   .footer-left {
     width: 40%;
     text-align: left;
@@ -146,7 +152,8 @@ body{
          border-radius: 10px 10px 10px 10px;
     text-align: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 6%;
+
   }
 
   input, textarea{
@@ -183,16 +190,20 @@ body{
       margin-top: 20px;
     }
 
+    
+
     #nav-menu {
       flex-direction: column;
       position: fixed;
         top: 90px;
       right: 0;
+      /* z-index: 1000; */
            background-color: #8e8e8ed0;
       padding: 50px;
       border: none;
       overflow: hidden;
-      transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      /* transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+      transition: transform 0.3s ease-in-out;
       opacity: 0; 
     }
 
@@ -204,15 +215,12 @@ body{
       font-size: 20px;
     }
 
-    button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-
     .footer-right {
       width: 20%;
       text-align: right;
       display: flex;
       flex-direction: column;
+      
     }
 
     .footer-right a {
