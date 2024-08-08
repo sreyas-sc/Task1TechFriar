@@ -8,10 +8,6 @@
     <style>  
     body{
       background-color: #FDF0F0;
-      /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
-      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-
-      /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
       margin-left: 0px;
       min-height: max-content;
       overflow-x: hidden;
@@ -143,18 +139,24 @@
     }
     .projectn {
       background-color: #D3C3B9;
+      /* min-height: fit-content; */
       padding: 10px 10px;
       border-radius: 15px;
       margin-bottom: 10px;
       width: 30%;
       box-shadow:  0 12px 15px rgba(57, 57, 57, 0.725);
     }
+
+    .projectn a{
+      text-decoration: none;
+      font-size: 14px;
+    }
     .projectn img{
       width: 50%;
       height: 30%;
       align-items: center;
       justify-content: center;
-      border-radius: 10%;
+      /* border-radius: 10%; */
       box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
     }
 
@@ -258,21 +260,32 @@
       }
 
       .projectn {
+        min-height: max-content;
       width: 80%; 
       margin: 0 auto;
       margin-bottom: 10px;
       min-height: max-content;
       align-items: center;
   }
-  .projectn img{  
-    width: 70%;
+  .projectn img{ 
+   
+    width: 40%;
     height: 30%;
   }
+
+  .projectndesc{
+    font-size: 12px;
+  }
   
-  .projectnhead, .discoverworkspara, .discoverWorks, h1, .projectndesc{
+  .projectnhead, .discoverworkspara, .discoverWorks, h1{
     font-size: 100%;
     text-align: center;
   }
+
+  .projectn a{
+      text-decoration: none;
+      font-size: 10px;
+    }
  
     }
 
@@ -324,31 +337,31 @@
             <h4>Highlighted Projects:</h4>
           <div class="projects">
             <div class="projectn">
-              <p class="projectnhead">Project Name 1</p>
-              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
+              <p class="projectnhead">PharMap</p>
+              <p class="projectndesc">A nearby pharmacy finder and medicine management flutter app with medicine reminder</p>
+              <!-- <br>
+              <img src="https://github.com/sreyas-sc/PharMap/raw/master/assets/images/one.jpg" alt="Loading failed"> -->
               <br>
-              <img src="https://github.com/sreyas-sc/PharMap/raw/master/assets/images/one.jpg" alt="Loading failed">
-              <br>
-              <a href="https://www.sreyas.site">View project <i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/sreyas-sc/PharMap">View project <i class="fa-brands fa-github"></i></a>
             </div>
 
             <div class="projectn">
-              <p class="projectnhead">Project Name 1</p>
-              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
+              <p class="projectnhead">JSChatApp</p>
+              <p class="projectndesc">This JavaScript chat application was developed as part of an interview assessment. It provides real-time chat functionality using modern web technologies and is designed to demonstrate proficiency in JavaScript, Node.js, and WebSocket technologies.</p>
               <br>
-              <img src="https://github.com/sreyas-sc/JSChatApp/raw/master/chat-app-frontend/src/assets/homechat.jpg" alt="Loading failed">
-              <br>
-              <a href="https://www.sreyas.site">View project <i class="fa-brands fa-github"></i></a>
+              <!-- <img src="https://github.com/sreyas-sc/JSChatApp/raw/master/chat-app-frontend/src/assets/homechat.jpg" alt="Loading failed">
+              <br> -->
+              <a href="https://github.com/sreyas-sc/JSChatApp">View project <i class="fa-brands fa-github"></i></a>
             </div>
 
             <div class="projectn">
-              <p class="projectnhead">Project Name 1</p>
-              <p class="projectndesc">A brief description of this project, showcasing the problem it solved, the approach taken, and the impact it had.</p>
-              <br>
-              <img src="https://github.com/sreyas-sc/Portfolio/blob/main/src/assets/tempimg.png?raw=true" alt="Loading Failed">
+              <p class="projectnhead">Protfolio</p>
+              <p class="projectndesc">A peronalized portfolio built using React</p>
+              <!-- <br>
+              <img src="https://github.com/sreyas-sc/Portfolio/blob/main/src/assets/tempimg.png?raw=true" alt="Loading Failed"> -->
               <br>
 
-              <a href="https://www.sreyas.site">View project <i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/sreyas-sc/Portfolio">View project <i class="fa-brands fa-github"></i></a>
             </div>
           </div>
         </div>
