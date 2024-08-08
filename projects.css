@@ -1,0 +1,318 @@
+
+    body{
+      background-color: #FDF0F0;
+      /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+
+      /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+      margin-left: 0px;
+      min-height: max-content;
+      overflow-x: hidden;
+    }     
+
+    h1{
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.05;
+    }
+
+    header {
+      font-family: 'Poppins', sans-serif;
+      /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+      background: #132043;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
+  border-radius: 10px; 
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725); 
+      ;
+
+      /* font-family: 'Brush Script MT', cursive; */
+      color: #494949;
+    }
+
+    h1.headlabel {
+      padding-left: 20px;
+      font-size: 30px;
+      text-align: left;
+      text-decoration: none;
+      color:#f9f9f9;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    .header-left {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      align-items: center;
+    }
+
+    .header-button {
+      font-family: 'Poppins', sans-serif;
+      color: #f9f9f9;
+      width: fit-content;
+      font-size: 1rem;
+      min-height: 44px; 
+      min-width: 90px; 
+      min-height: 35px;
+      /* background-color: #1F4172; */
+      background-color: #3D4D55;
+
+      border-color: #1F4172;
+      margin-right: 20px;
+      min-width: 90px;
+      border-radius: 20px;
+      cursor: pointer;
+      padding: 10px 20px; 
+      margin: 10px; 
+    }
+
+    .header-button:hover {
+      color: #fff;
+      background-color: #3cec65;
+      border-color: #0dfd55;
+    }
+
+    .gitbutton {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+    .gitbutton button{
+      /* margin-right: 40%; */
+      color: #ffffff;
+      width: fit-content;
+      font-size: 2rem;
+      min-height: 35px;
+      background-color: #222222;
+      border-color: #252627;
+      min-width: 90px;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+
+    .gitbutton button :hover{
+      width: 90px;
+    }
+
+    footer {
+      /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
+      background: #132043;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      padding: 1em;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    hr{
+      box-shadow: 0 0 15px rgba(105, 150, 162, 0.9); 
+      width: 80%;
+    }
+
+    header, footer {
+      width: 100vw; 
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      width: 40%;
+      text-align: left;
+    }
+
+    .footer-center {
+      width: 30%;
+      text-align: center;  
+    }
+
+    .footer-right {
+      width: 30%;
+      text-align: right;
+    }
+
+    .footer-right a {
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    
+    .projects{
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+
+    .projectn{
+      background: hsla(0, 6%, 75%, 1);
+      background: radial-gradient(circle, hsla(0, 6%, 75%, 1) 15%, hsla(0, 1%, 42%, 1) 100%);
+      background: -moz-radial-gradient(circle, hsla(0, 6%, 75%, 1) 15%, hsla(0, 1%, 42%, 1) 100%);
+      background: -webkit-radial-gradient(circle, hsla(0, 6%, 75%, 1) 15%, hsla(0, 1%, 42%, 1) 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C2BABA", endColorstr="#6C6A6A", GradientType=1 );
+      width: 70%;
+      border-radius: 10px;
+      box-shadow: 0 12px 15px rgba(22, 22, 22, 0.9);
+      /* max-width: fit-content; */
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      
+    }
+    .projectn h2{
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
+
+    .discoverWorks, .discoverworkspara, .whatidoh, .whatidoparag {
+      font-family: 'Poppins', sans-serif;
+      color: #494949;
+      text-align: center;
+    }
+
+    .hamburger-menu {
+      display: none;
+      background-color: #00246b00;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .hamburger-menu i {
+      font-size: 24px;
+      color: #000000;
+    }
+
+    #nav-menu {
+      display: none;
+      justify-content: space-between;
+    }
+
+    .hamburger-menu.active + #nav-menu {
+      display: flex; 
+      opacity: 1;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      .hamburger-menu {
+        display: block;
+      }
+
+
+      .header-button{
+        font-size: 0.7rem;
+        margin-top: 20px;
+      }
+
+      #nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        background-color: #8e8e8ed0;
+        padding: 50px;
+        border: none;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0; 
+      }
+
+      #nav-menu a {
+        margin-bottom: 5px;
+      }
+
+      .footer-right {
+        width: 20%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-right a {
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .footer-left {
+        width: 50%;
+        text-align: left;
+        font-size: 10px;
+      }
+
+      .footer-center p {
+        width: 50%;
+        font-size: 12px;
+        text-align: center;  
+      }
+
+      .footer-right {
+        width: 30%;
+        text-align: right;
+      }
+
+      .projectn {
+      width: 80%; 
+      margin: 0 auto;
+      margin-bottom: 10px;
+      min-height: max-content;
+      align-items: center;
+  }
+  .projectn img{  
+    width: 70%;
+    height: 30%;
+  }
+  
+  .projectnhead, .discoverWorks, h1, .projectndesc{
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .discoverworkspara{
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .projectn h2{
+    font-size: 16px;
+  }
+ 
+  .projectn p{
+    text-align: justify;
+    font-size: 13px;
+  }
+  .projectn a{
+    text-decoration: none;
+  }
+
+    }
+
+    @media screen and (min-width: 769px) {
+      .hamburger-menu {
+        display: none;
+      }
+
+      #nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
