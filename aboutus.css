@@ -98,14 +98,20 @@ border-radius: 10px;
 
   .footer-left {
     width: 40%;
+  
     text-align: left;
+  }
+  .footer-left p{
+    color: #fff;
   }
 
   .footer-center {
     width: 30%;
     text-align: center;  
   }
-
+  .footer-center p{
+    color: #fff;
+  }
   .footer-right {
     width: 30%;
     text-align: right;
