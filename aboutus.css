@@ -5,13 +5,7 @@ body{
     overflow-x: hidden;
   }     
 
-  h1{
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    line-height: 1.05;
-  }
-
+ 
   header {
     font-family: 'Poppins', sans-serif;
     /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
@@ -25,11 +19,15 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 1.9);
 border-radius: 10px; 
   }
 
-  h1{
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-    color: #494949;
-  }
+  
+
+  h1 {
+  text-align: center;
+  font-size: 2.5rem; 
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  
+}
 
   h1.headlabel {
     padding-left: 20px;
@@ -63,7 +61,7 @@ border-radius: 10px;
     min-width: 90px;
     border-radius: 20px;
     cursor: pointer;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     margin: 10px; 
   }
 
@@ -74,6 +72,7 @@ border-radius: 10px;
   }
 
   footer {
+    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
     background: #132043;
     color: #fff;
     position: relative;
@@ -98,20 +97,14 @@ border-radius: 10px;
 
   .footer-left {
     width: 40%;
-  
     text-align: left;
-  }
-  .footer-left p{
-    color: #fff;
   }
 
   .footer-center {
     width: 30%;
     text-align: center;  
   }
-  .footer-center p{
-    color: #fff;
-  }
+
   .footer-right {
     width: 30%;
     text-align: right;
@@ -121,6 +114,54 @@ border-radius: 10px;
     margin-left: 10px;
     color: #fff;
     text-decoration: none;
+  }
+  .projects{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .projectnhead{
+    font-weight: bolder;
+    color: #1e1e46;
+  }
+  .projectn {
+    background-color: #D3C3B9;
+    /* min-height: fit-content; */
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 30%;
+    box-shadow:  0 12px 15px rgba(57, 57, 57, 0.725);
+  }
+
+  .projectn a{
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .projectn img{
+    width: 50%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10%; */
+    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+  }
+
+  .HighlightedProjects {
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
+    text-align: center;
+  }
+
+  .discoverWorks, .discoverworkspara, .whatidoh, .whatidoparag {
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
+    text-align: center;
   }
 
   .hamburger-menu {
@@ -146,68 +187,6 @@ border-radius: 10px;
     opacity: 1;
   }
 
-  .welcome{
-    width: 75%;
-    margin: 0 auto;
-    background-color: #e0dfdf ;
-    padding: 20px;
-    border-radius: 10px ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);;
-  }
-  .welcome p{
-    text-align: center;
-    padding: 10px;
-    font-style: italic;
-
-  }
-
-  .background{
-    
-    width: 75%;
-    margin: auto;
-    background-color: #e0dfdf ;
-    padding: 20px;
-    border-radius: 10px ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-  }
-  .background h2{
-    text-align: left;
-    color: #1F4172;
-  }
-  .background p{
-    text-align: center;
-    padding: 10px;
-    font-style: italic;
-  }
-  .skills h2,p{
-    text-align: center;
-    color: #1F4172;
-  }
-  li{
-    padding: 20px;
-    font-size: 0.9em;
-    list-style-type: none;
-  }
-  .lst{
-    margin: auto;
-    border-radius: 10px;
-    width: fit-content;
-    background-color: #e0dfdf ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-   
-    }
-
-  .letsconnect h2, p{
-    text-align: center;
-    color: #1F4172;
-  }
-
-  .iconsforsocial{
-    font-size: 2em;
-    color:#1F4172;
-    text-align: center;
-  }
-
   
   @media screen and (max-width: 768px) {
     .hamburger-menu {
@@ -219,6 +198,8 @@ border-radius: 10px;
       font-size: 0.7rem;
       margin-top: 20px;
     }
+
+   
 
     #nav-menu {
       flex-direction: column;
@@ -235,40 +216,6 @@ border-radius: 10px;
 
     #nav-menu a {
       margin-bottom: 5px;
-    }
-
-    h1{
-      font-size: 20px;
-    }
-    .welcome{
-      width: 70%;
-      height: 100%;
-    }
-    .welcome p{
-      font-size: 13px;
-    }
-
-    .background{
-      width: 70%;
-      height: 100%;
-    }
-    .background h2{
-      font-size: 15px;
-    }
-    .background p{
-      font-size: 13px;
-    }
-
-    .skills h2{
-      font-size: 15px;
-    }
-    .skills p{
-      font-size: 13px;
-    }
-
-    li{
-      list-style-type: none;
-      font-size: 13px;
     }
 
     .footer-right {
@@ -302,6 +249,39 @@ border-radius: 10px;
       text-align: right;
     }
 
+    .projectn {
+      min-height: max-content;
+    width: 80%; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    min-height: max-content;
+    align-items: center;
+}
+.projectn img{ 
+ 
+  width: 40%;
+  height: 30%;
+}
+
+.projectndesc{
+  font-size: 12px;
+}
+
+.projectnhead, .discoverWorks, h1{
+  font-size: 100%;
+  text-align: center;
+}
+
+.discoverworkspara{
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.projectn a{
+    text-decoration: none;
+    font-size: 10px;
+  }
 
   }
 
