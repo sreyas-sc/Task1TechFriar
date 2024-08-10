@@ -1,136 +1,76 @@
+/* The body of the web page */
 body{
-    background-color: #FDF0F0;
-    margin-left: 0px;
-    min-height: max-content;
-    overflow-x: hidden;
-  }     
+  background-color: #e8e8e8;;
+  margin-left: 0px;
+  min-height: max-content;
+  overflow-x: hidden;
+}     
 
-  h1{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.05;
-  }
+/* -----------------------The havbar(header)  section elemnts----------------------*/
+header {
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; 
+  width: 100vw; 
+  margin: 0 auto;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
 
-  header {
-    font-family: 'Poppins', sans-serif;
-    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-    background: #132043;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden; 
-box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
-border-radius: 10px; 
-  }
+h1.headlabel {
+  padding-left: 20px;
+  font-size: 30px;
+  text-align: left;
+  text-decoration: none;
+  color:#101936;
 
-  h1{
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-    color: #494949;
-  }
+  font-family: 'Brush Script MT', cursive;
+}
+/* The header left side of the page (containing the icon line name "sreyas" on the top left corner) */
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
 
-  h1.headlabel {
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-family: 'Brush Script MT', cursive;
-  }
+/* The buttons in the header Home, about, Services, Blog, Projects, Contact */
+.header-button {
+  font-family: 'Poppins', sans-serif;
+  color: #090909;
+  width: fit-content;
+  font-size: 1rem;
+  min-height: 44px; 
+  min-width: 90px; 
+  min-height: 35px;
+  background-color:#e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin-right: 20px;
+  min-width: 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px; 
+}
 
-  .header-left {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-  }
+/* Animation on hovering the button to chage the button color */
+.header-button:hover {
+  color: #fff;
+  background-color: #3cec65;
+  border-color: #0dfd55;
+}
 
-  .header-button {
-    font-family: 'Poppins', sans-serif;
-    color: #f9f9f9;
-    width: fit-content;
-    font-size: 1rem;
-    min-height: 44px; 
-    min-width: 90px; 
-    min-height: 35px;
-    /* background-color: #1F4172; */
-    background-color: #3D4D55;
-
-    border-color: #1F4172;
-    margin-right: 20px;
-    min-width: 90px;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 10px 20px; 
-    margin: 10px; 
-  }
-
-  .header-button:hover {
-    color: #fff;
-    background-color: #3cec65;
-    border-color: #0dfd55;
-  }
-
-  footer {
-    background: #132043;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  hr{
-    box-shadow: 0 0 15px rgba(105, 150, 162, 0.9); 
-    width: 80%;
-  }
-
-  header, footer {
-    width: 100vw; 
-    margin: 0 auto;
-  }
-
-  .footer-left {
-    width: 40%;
-  
-    text-align: left;
-  }
-  .footer-left p{
-    color: #fff;
-  }
-
-  .footer-center {
-    width: 30%;
-    text-align: center;  
-  }
-  .footer-center p{
-    color: #fff;
-  }
-  .footer-right {
-    width: 30%;
-    text-align: right;
-  }
-
-  .footer-right a {
-    margin-left: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .hamburger-menu {
-    display: none;
-    background-color: #00246b00;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-
+/* The hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  background-color: #00246b00;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
   .hamburger-menu i {
     font-size: 24px;
     color: #000000;
@@ -140,86 +80,214 @@ border-radius: 10px;
     display: none;
     justify-content: space-between;
   }
-
+  /* When the .hamburger-menu element has the 'active' class, 
+  this rule applies to the #nav-menu element immediately following it.
+  The #nav-menu will be displayed as a flex container and its
+  opacity will be set to 1, making it visible. */
   .hamburger-menu.active + #nav-menu {
-    display: flex; 
+    display: flex;  
     opacity: 1;
   }
 
+
+/* ---------------------Header section ends here-------------------------- */
+
+
+
+  
+  /* The body section begins here(main) */
+
+
+  /* The heading of the about page saying "about me" */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem; 
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
+    }
+    /* The 1st card of the about page */
   .welcome{
     width: 75%;
     margin: 0 auto;
-    background-color: #e0dfdf ;
+    background: #e8e8e8;
     padding: 20px;
     border-radius: 10px ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }
-  .welcome p{
-    text-align: center;
-    padding: 10px;
-    font-style: italic;
+    /* The content of the 1st card */
+    .welcome p{
+        text-align: justify;
+        padding: 10px;
+        font-style: italic;
+        color: #494949;
+    }
 
-  }
-
-  .background{
-    
+  /* The second card (background) */
+  .background{    
     width: 75%;
     margin: auto;
-    background-color: #e0dfdf ;
+    background: #e8e8e8; ;
     padding: 20px;
     border-radius: 10px ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-  }
-  .background h2{
-    text-align: left;
-    color: #1F4172;
-  }
-  .background p{
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }   
+      /* The heading of the background card */
+      .background h2{
+        text-align: left;
+        color: #494949;
+      }
+      /* The content of the background card */
+      .background p{
+        text-align: justify;
+        padding: 10px;
+        color: #494949;
+        font-style: italic;
+      }
+
+  /* Third card (My Values) */
+  .myValues{    
+    width: 75%;
+    margin: auto;
+    background: #e8e8e8; ;
+    padding: 20px;
+    border-radius: 10px ;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }   
+      /* The heading of the myValues card */
+      .myValues h2{
+        text-align: left;
+        color: #494949;
+      }
+      /* The content of the myValues card */
+      .myValues p{
+        text-align: justify;
+        padding: 10px;
+        font-style: italic;
+        color: #494949;
+      }
+    
+  /* Fourth card (personal interests) */
+  .personalInterests{    
+    width: 75%;
+    margin: auto;
+    background: #e8e8e8; ;
+    padding: 20px;
+    border-radius: 10px ;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }   
+      /* The heading of the personal interests card */
+      .personalInterests h2{
+        text-align: left;
+        color: #494949;
+      }
+      /* The content of the personal interests card */
+      .personalInterests p{
+        text-align: justify;
+        padding: 10px;
+        font-style: italic;
+        color: #494949;
+      }
+
+/* The cards ends here */
+
+/* The lets connect section with a paragraph and the social icons */
+.letsconnect h2, .letsconnect p{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #494949;;
+}
+  /* The social media icons on the lets connect section */
+  .iconsforsocial{
+    font-size: 2em;
     text-align: center;
-    padding: 10px;
-    font-style: italic;
   }
-  .skills h2,p{
+
+/* The skills secion */
+  .skills h2, .skills p{
     text-align: center;
-    color: #1F4172;
+    color: #494949;
   }
+  /* The list items (skills) */
   li{
     padding: 20px;
     font-size: 0.9em;
     list-style-type: none;
   }
+
+
+  /* lst is the lst elements of the skills */
   .lst{
     margin: auto;
     border-radius: 10px;
     width: fit-content;
-    background-color: #e0dfdf ;
-    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
+    color: #494949;
+    background-color:#e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
    
     }
 
-  .letsconnect h2, p{
+
+  /* The body (main secton) ends here */
+
+
+  /* ---------------------------------------The footer parts begins here---------------------------- */
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    padding: 1em;
     text-align: center;
-    color: #1F4172;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    background-color: #e8e8e8;
+    color: #fff;
   }
 
-  .iconsforsocial{
-    font-size: 2em;
-    color:#1F4172;
-    text-align: center;
+  /* The left side of the footer contents styles */
+  .footer-left {
+    width: 50%;
+    color: #343434;
+    text-align: left;
   }
 
   
+  /* The Right side of the footer contents styles (icons are here)*/
+  .footer-right {
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    width: 50%; 
+    text-align: right; 
+}
+      /* The link buttons of the footer right side */
+      .footer-right a {
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+/* ----------------------The footer section of the page ends here--------------------- */
+
+/* ---------------------The meda query for mobile view starts here-------------------------- */
   @media screen and (max-width: 768px) {
+
+     /* The hamburger menu in the top right corner */
     .hamburger-menu {
       display: block;
     }
 
-
+    /* The buttons of the header (home, services etc..) */
     .header-button{
       font-size: 0.7rem;
       margin-top: 20px;
     }
 
+    /* The menu */
     #nav-menu {
       flex-direction: column;
       position: fixed;
@@ -233,86 +301,134 @@ border-radius: 10px;
       opacity: 0; 
     }
 
+    /* The link buttons of the menu */
     #nav-menu a {
       margin-bottom: 5px;
     }
 
+    /* The body section of the about page phone view*/
+    /* The main heading "About Me" */
     h1{
       font-size: 20px;
     }
+
+    /* The welcome card (1st card) */
     .welcome{
       width: 70%;
       height: 100%;
     }
-    .welcome p{
-      font-size: 13px;
-    }
+      .welcome p{
+        font-size: 13px;
+      }
 
+    /* The 2nd card (Background) */
     .background{
       width: 70%;
       height: 100%;
-    }
-    .background h2{
+    } 
+      /* Heading of the card */
+      .background h2{
+        font-size: 15px;
+      }
+      .background p{
+        font-size: 13px;
+      }
+
+    /* The 3rd card (My Values) */
+    .myValues{
+      width: 70%;
+      height: 100%;
+    } 
+      /* Heading of the card */
+      .myValues h2{
+        font-size: 15px;
+      }
+      .myValues p{
+        font-size: 13px;
+      }
+    
+    /* The 4th card (personalInterests) */
+    .personalInterests{
+      width: 70%;
+      height: 100%;
+    } 
+      /* Heading of the card */
+      .personalInterests h2{
+        font-size: 15px;
+      }
+      .personalInterests p{
+        font-size: 13px;
+      }
+
+    /* Lets connect section */
+    .letsconnect h2{
       font-size: 15px;
     }
-    .background p{
+    .letsconnect p{
+      text-align: justify;
+      padding-left: 20%;
+      padding-right: 20%;
+      color: #494949;
       font-size: 13px;
+      margin-bottom: 40px;
     }
 
+    /* The skills and expertises section of the mobile view */
     .skills h2{
+      margin-top: 20px;
       font-size: 15px;
     }
+
     .skills p{
       font-size: 13px;
     }
 
-    li{
+    .skills ul{
       list-style-type: none;
       font-size: 13px;
     }
+      /* --------------------------Body section ends here(phone view)-------------------------- */
 
+    /* The  */
+
+    /* The footer section of the page on mobile view starts here */
     .footer-right {
-      width: 20%;
+      width: 50%;
       text-align: right;
       display: flex;
       flex-direction: column;
     }
+      /* The link buttons of the footer right side */
+      .footer-right a {
+        margin-left: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 22px;
+      }
 
-    .footer-right a {
-      margin-left: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 22px;
-    }
-
+      /* The left side of the footer */
     .footer-left {
       width: 50%;
       text-align: left;
       font-size: 10px;
     }
 
-    .footer-center p {
-      width: 50%;
-      font-size: 12px;
-      text-align: center;  
-    }
-
-    .footer-right {
-      width: 30%;
-      text-align: right;
-    }
-
-
   }
 
+  /* Media querry for mobile ends here */
+
+  /* For screens wider than 769 pixels: */
   @media screen and (min-width: 769px) {
-    .hamburger-menu {
-      display: none;
-    }
+    /* Hide the hamburger menu */
+   .hamburger-menu {
+     display: none;
+   }
 
-    #nav-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
+    /* Show the navigation menu as a flex container,
+     with items spaced out evenly and centered vertically */
+   #nav-menu {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+ }
