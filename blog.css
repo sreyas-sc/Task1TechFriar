@@ -1,129 +1,77 @@
+/* The body of the web page */
 body{
-    background-color: #FDF0F0;
-    margin-left: 0px;
-    min-height: max-content;
-    overflow-x: hidden;
-  }     
+  background-color: #e8e8e8;;
+  margin-left: 0px;
+  min-height: max-content;
+  overflow-x: hidden;
+}   
 
-  h1{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.05;
-  }
 
-  header {
-    font-family: 'Poppins', sans-serif;
-    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-    background: #132043;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden; 
-box-shadow: 0 0 15px rgba(0, 0, 0, 1.9); 
-border-radius: 10px; 
-  }
+/* -----------------------The havbar(header)  section elemnts----------------------*/
+header {
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; 
+  width: 100vw; 
+  margin: 0 auto;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
 
-  h1{
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0 12px 15px rgba(57, 57, 57, 0.725);
-    color: #494949;
-  }
+h1.headlabel {
+  padding-left: 20px;
+  font-size: 30px;
+  text-align: left;
+  text-decoration: none;
+  color:#101936;
 
-  h1.headlabel {
-    padding-left: 20px;
-    font-size: 30px;
-    text-align: left;
-    text-decoration: none;
-    color:#f9f9f9;
-    font-family: 'Brush Script MT', cursive;
-  }
+  font-family: 'Brush Script MT', cursive;
+}
+/* The header left side of the page (containing the icon line name "sreyas" on the top left corner) */
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
 
-  .header-left {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
-  }
+/* The buttons in the header Home, about, Services, Blog, Projects, Contact */
+.header-button {
+  font-family: 'Poppins', sans-serif;
+  color: #090909;
+  width: fit-content;
+  font-size: 1rem;
+  min-height: 44px; 
+  min-width: 90px; 
+  min-height: 35px;
+  background-color:#e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  margin-right: 20px;
+  min-width: 90px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px; 
+}
 
-  .header-button {
-    font-family: 'Poppins', sans-serif;
-    color: #f9f9f9;
-    width: fit-content;
-    font-size: 1rem;
-    min-height: 44px; 
-    min-width: 90px; 
-    min-height: 35px;
-    /* background-color: #1F4172; */
-    background-color: #3D4D55;
+/* Animation on hovering the button to chage the button color */
+.header-button:hover {
+  color: #fff;
+  background-color: #3cec65;
+  border-color: #0dfd55;
+}
 
-    border-color: #1F4172;
-    margin-right: 20px;
-    min-width: 90px;
-    border-radius: 20px;
-    cursor: pointer;
-     padding: 10px 20px; 
-    margin: 10px; }
-
-  .header-button:hover {
-    color: #fff;
-    background-color: #3cec65;
-    border-color: #0dfd55;
-  }
-
-  
-
-  footer {
-    background: #132043;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    /* margin-bottom: -12px; */
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  
-
-  header, footer {
-    width: 100vw; 
-    margin: 0 auto;
-  }
-
-  .footer-left {
-    width: 40%;
-    text-align: left;
-  }
-
-  .footer-center {
-    width: 30%;
-    text-align: center;  
-  }
-
-  .footer-right {
-    width: 30%;
-    text-align: right;
-  }
-
-  .footer-right a {
-    margin-left: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .hamburger-menu {
-    display: none;
-    background-color: #00246b00;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-
+/* The hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  background-color: #00246b00;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
   .hamburger-menu i {
     font-size: 24px;
     color: #000000;
@@ -133,127 +81,150 @@ border-radius: 10px;
     display: none;
     justify-content: space-between;
   }
-
+  /* When the .hamburger-menu element has the 'active' class, 
+  this rule applies to the #nav-menu element immediately following it.
+  The #nav-menu will be displayed as a flex container and its
+  opacity will be set to 1, making it visible. */
   .hamburger-menu.active + #nav-menu {
-    display: flex; 
+    display: flex;  
     opacity: 1;
   }
-
-  section{
-    text-align: justify;
-  }
-
-  .intro{
-    text-align: center;
-    padding: 25px;
-   
-  }
-
-  .blogOne{
-    background-color: #807b7b;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 10%;
-  }
-
-  pre {
-  background: #010101;
-  padding: 1rem;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-  code {
-    color: #59de81;
-      display: block;
-      white-space: pre-wrap;
-  }
+  /* ---------------------Header section ends here-------------------------- */
   
-  @media screen and (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-     
-    }
-
-
-
-    .header-button{
-      font-size: 0.7rem;
-      margin-top: 20px;
-    }
-
-    #nav-menu {
-      flex-direction: column;
-      position: fixed;
-      top: 90px;
-      right: 0;
-      background-color: #8e8e8ed0;
-      padding: 50px;
-      border: none;
-      overflow: hidden;
-      transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      opacity: 0; 
-    }
-
-    #nav-menu a {
-      margin-bottom: 5px;
-    }
-
-    h1{
-      font-size: 20px;
-    }
-    
-
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+/* ---------------The Main section starts here---------------------- */
+section{
+  text-align: justify;
 }
-    
 
-    .footer-right {
-      width: 20%;
-      text-align: right;
-      display: flex;
-      flex-direction: column;
-    }
+.intro{
+  text-align: center;
+  padding: 25px;
+ 
+}
 
+.blogOne{
+  background-color: #807b7b;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 10%;
+}
+
+pre {
+background: #010101;
+padding: 1rem;
+border-radius: 5px;
+overflow-x: auto;
+}
+
+code {
+  color: #59de81;
+    display: block;
+    white-space: pre-wrap;
+}
+ 
+/* ------------------------The main section ends here------------------------------ */
+
+  
+  
+/* ---------------------------------------The footer parts begins here---------------------------- */
+  
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  background-color: #e8e8e8;
+  color: #fff;
+}
+
+/* The left side of the footer contents styles */
+.footer-left {
+  width: 50%;
+  color: #343434;
+  text-align: left;
+}
+
+
+/* The Right side of the footer contents styles (icons are here)*/
+.footer-right {
+  position: absolute;
+  bottom: 0; 
+  right: 0; 
+  width: 50%; 
+  text-align: right; 
+}
+    /* The link buttons of the footer right side */
     .footer-right a {
       margin-left: 10px;
-      color: #fff;
       text-decoration: none;
-      font-size: 22px;
     }
 
-    .footer-left {
-      width: 50%;
-      text-align: left;
-      font-size: 10px;
+/* ----------------------The footer section of the page ends here--------------------- */
+
+
+/* ---------------------The meda query for mobile view starts here-------------------------- */
+@media screen and (max-width: 768px) {
+
+  /* The hamburger menu in the top right corner */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* The buttons of the header (home, services etc..) */
+  .header-button{
+    font-size: 0.7rem;
+    margin-top: 20px;
+  }
+
+  /* The menu */
+  #nav-menu {
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    right: 0;
+    background-color: #8e8e8ed0;
+    padding: 50px;
+    border: none;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0; 
+  }
+
+  /* The link buttons of the menu */
+  #nav-menu a {
+    margin-bottom: 5px;
+  }
+
+
+  /* The body section of the home page phone view */
+
+
+   
+  h1 {
+    text-align: center;
+    font-size: 2.5rem; 
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
     }
 
-    .footer-center p {
-      width: 50%;
-      font-size: 12px;
-      text-align: center;  
-    }
-
-    .footer-right {
-      width: 30%;
-      text-align: right;
-    }
-
-
-    .intro{
-    /* text-align: center; */
+  .intro p{
     font-size: 13px;
     text-align: justify;
-    /* padding-left: 10px; */
     padding: 25px;
+    color: #494949;
    
   }
 
   .blogOne{
-    background-color: #807b7b;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    background-color: #e8e8e8;
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -265,7 +236,7 @@ button:hover {
   }
 
   pre {
-  background: #010101;
+  background: #363636;
   padding: 1rem;
   border-radius: 5px;
   overflow-x: auto;
@@ -281,16 +252,49 @@ font-size: 10px;
       white-space: pre-wrap;
   }
 
-  }
+  
 
-  @media screen and (min-width: 769px) {
-    .hamburger-menu {
-      display: none;
+
+  /* --------------------------Body section ends here(phone view)-------------------------- */
+
+
+  /* The footer section of the page on mobile view starts here */
+  .footer-right {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+    /* The link buttons of the footer right side */
+    .footer-right a {
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 22px;
     }
 
-    #nav-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    /* The left side of the footer */
+  .footer-left {
+    width: 50%;
+    text-align: left;
+    font-size: 10px;
   }
+
+}
+
+/* For screens wider than 769 pixels: */
+@media screen and (min-width: 769px) {
+   /* Hide the hamburger menu */
+  .hamburger-menu {
+    display: none;
+  }
+
+   /* Show the navigation menu as a flex container,
+    with items spaced out evenly and centered vertically */
+  #nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+  
