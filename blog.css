@@ -92,6 +92,21 @@ h1.headlabel {
   /* ---------------------Header section ends here-------------------------- */
   
 /* ---------------The Main section starts here---------------------- */
+/* Main header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem; 
+  font-family: 'Poppins', sans-serif;
+  color: #494949;
+  }
+
+/*Main description  */
+.headDescription p{
+  color: #494949;
+  text-align: justify;
+}
+
+
 section{
   text-align: justify;
 }
@@ -102,14 +117,23 @@ section{
  
 }
 
+/* The blog div */
 .blogOne{
-  background-color: #807b7b;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  background-color: #e8e8e8;
   width: 80%;
   margin: auto;
   padding: 20px;
   margin-bottom: 10%;
 }
 
+.blogOne h2{
+  text-align: justify;
+  color: #343434;
+}
+
+
+/* The place where the code is shown */
 pre {
 background: #010101;
 padding: 1rem;
@@ -214,12 +238,10 @@ footer {
     color: #494949;
     }
 
-  .intro p{
+  p{
     font-size: 13px;
-    text-align: justify;
-    padding: 25px;
     color: #494949;
-   
+
   }
 
   .blogOne{
@@ -231,6 +253,12 @@ footer {
     margin-bottom: 10%;
   }
   
+  .blogOne h2{
+    font-size: 13px;
+  }
+  .blogOne p{
+    font-size: 12px;
+  }
   section{
     font-size: 12px;
   }
