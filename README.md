@@ -30,14 +30,8 @@ This project involves creating a basic website using HTML and CSS as part of the
 Performance scores for the website have been evaluated using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) and are provided below.
 
 ### Performance Score Screenshots
-
-1. **Desktop Performance Score:**
    
-   ![Desktop Performance Score](https://github.com/sreyas-sc/Task1TechFriar/blob/8992ae222a50f2c54ffe6f8885ca6a84fdd74143/LightHousePerformance.pdf)
-
-2. **Mobile Performance Score:**
-
-   ![Mobile Performance Score](path/to/mobile-performance-score.png)
+   ![ Performance Score](https://github.com/sreyas-sc/Task1TechFriar/blob/8992ae222a50f2c54ffe6f8885ca6a84fdd74143/LightHousePerformance.pdf)
 
 ## Installation
 
