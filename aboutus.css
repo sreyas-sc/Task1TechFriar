@@ -49,11 +49,12 @@ h1.headlabel {
   border: 1px solid #e8e8e8;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   margin-right: 20px;
-  min-width: 90px;
   border-radius: 20px;
   cursor: pointer;
-  padding: 10px 20px;
-  margin: 10px; 
+  padding: 12px 24px; 
+  margin: 10px 15px; 
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
 }
 
 /* Animation on hovering the button to chage the button color */
@@ -291,14 +292,15 @@ h1.headlabel {
     #nav-menu {
       flex-direction: column;
       position: fixed;
-      top: 90px;
+      top: 80px;
       right: 0;
       background-color: #8e8e8ed0;
       padding: 50px;
       border: none;
       overflow: hidden;
-      transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      opacity: 0; 
+      width: 250px; 
+      height: 100vh; 
+      z-index: 999; /* Ensure the menu is above the slider */ 
     }
 
     /* The link buttons of the menu */
@@ -404,6 +406,7 @@ h1.headlabel {
         color: #fff;
         text-decoration: none;
         font-size: 22px;
+        margin-right: 20px;
       }
 
       /* The left side of the footer */
