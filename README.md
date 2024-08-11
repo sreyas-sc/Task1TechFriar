@@ -33,7 +33,7 @@ Performance scores for the website have been evaluated using [Google Lighthouse]
 
 1. **Desktop Performance Score:**
    
-   ![Desktop Performance Score](path/to/desktop-performance-score.png)
+   ![Desktop Performance Score](https://github.com/sreyas-sc/Task1TechFriar/blob/8992ae222a50f2c54ffe6f8885ca6a84fdd74143/LightHousePerformance.pdf)
 
 2. **Mobile Performance Score:**
 
